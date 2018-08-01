@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="baseaddons.repository" name="BaseAddons" version="0.4" provider-name="TVsupertuga">
+	<extension point="xbmc.addon.repository" name="tvsupertuga Repository">
+		<info compressed="false">http://baseaddons.tvsupertuga.org/addons.xml</info>
+		<checksum>http://baseaddons.tvsupertuga.org/addons.xml.md5</checksum>
+		<datadir zip="true">http://baseaddons.tvsupertuga.org/instal/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>BaseAddons repository</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="superlistaiptv.repository" name="ListaIPTV VIP repository" version="0.0.1" provider-name="NinjaHacking">
+	<extension point="xbmc.addon.repository" name="ListaIPTV VIP Add-on Repository">
+		<info compressed="false">http://raw.github.com/igor-rangel7l/novoigorrangel.repository/master/addons.xml</info>
+		<checksum>http://raw.github.com/igor-rangel7l/novoigorrangel.repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/igor-rangel7l/novoigorrangel.repository/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>IPTV VIP/summary>
+		<description>...</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.igorlista" name="[COLOR dodgerblue][B]IGOR LISTA[/B][/COLOR]" version="5.0.10" provider-name="Igor Silva">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="tvsupertuga.repository" />
+    <import addon="script.module.livestreamer" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>IGOR LISTA</summary>
+    <description lang="en">Assista Tv Online, Curta Filmes e Series Online no AddOn Igor Lista</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="2016.10.90"
+  name="SportsDevil [COLOR dodgerblue][B](IGOR LISTA)[/B][/COLOR]"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="script.module.livestreamer" />
+   <!-- <import addon="script.video.F4mProxy" /> -->
+   <!-- <import addon="plugin.video.f4mTester" /> -->
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service/proxy_service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different ad-financed sports streaming sites</summary>
+    <description>Play videos of different ad-financed sports streaming sites.
+
+SportsDevil does not provide any streams of its own; stream quality, content and copyright are responsibility of the ad-financed source web site.
+
+For updates check the readme.
+    </description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="tvsupertuga.repository" name="[COLOR cyan]TV[/COLOR][COLOR red]supertuga[/COLOR].[COLOR limegreen]Repository[/COLOR]" version="0.1.0" provider-name="TVsupertuga">
+    <extension point="xbmc.addon.repository" name="TVsupertuga Repository">
+            <info compressed="false">http://repository.tvsupertuga.org/addons.xml</info>
+            <checksum>http://repository.tvsupertuga.org/addons.xml.md5</checksum>
+            <datadir zip="true">http://repository.tvsupertuga.org/instal/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+		<summary lang="pt">TVsupertuga </summary>
+		<description lang="pt">rdftgyhu</description>
+		<forum>http://forumtvsupertuga.xyz</forum>
+		<website>https://www.facebook.com/TVsupertuga.PT/</website>
+        <platform>all</platform>
+    </extension>
+</addon>
+</addons>
